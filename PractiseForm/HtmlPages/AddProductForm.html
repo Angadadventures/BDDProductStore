@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>	</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample Add Product Form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample Add Product . " />
+<link rel='stylesheet' href='RegistartionFormCSS.css' type='text/css' />
+<script src="ProductFormValidation.js"></script>
+</head>
+</script>
+<style type="text/css"> 
+#Format
+{
+	font-family:Calibri;
+}
+
+#Format1
+{
+	font-family:Calibri;
+}
+</style>
+<!--onLoad="document.prodForm.prodid.focus();"> -->
+<body >
+<h1>Add Product Form</h1>
+<!--<p>Use tab keys to move from one input field to the next.</p> -->
+<form name='prodForm' onSubmit="return isDataValid();">
+<ul>
+<li><label for="prodid">Product id:</label></li>
+<li><input type="text" id="prodID" name="prodid" size="10" /></li>
+
+<!--<li><label for="passid">Password:</label></li>
+<li><input type="password" id="pwd" name="passid" size="10" /></li> -->
+
+<li><label for="prodname">Item Name:</label></li>
+<li><input type="text" id="prodname" name="prodname" size="40" /></li>
+
+<li><label for="price">Price:</label></li>
+<li><input type="text" id="prodprice" name="p_price" size="10" /></li>
+
+<li><label for="Storeaddress">Store Address:</label></li>
+<li><input type="text" class="Format1" id="addr" name="address" size="50" /></li>
+
+<li><label for="city">City:</label></li>
+<li><select name="city">
+<option selected="" value="Default">(Please select a city)</option>
+<option value="AF">Hyderabad</option>
+<option value="AL">Bangalore</option>
+<option value="DZ">Mumbai</option>
+</select></li>
+
+
+<li><label for="email">Email:</label></li>
+<li><input type="text" class="Format" name="email" size="50" /></li>
+
+<li><label id="category">Category:</label></li>
+<li><input type="radio" name="pcat" value="Electronics" /><span>Electronics</span></li>
+<li><input type="radio" name="pcat" value="utensil" /><span>Utensil</span></li>
+
+<li><label>Ttype:</label></li>
+<li><input type="checkbox" name="typ" value="A" checked /><span>A</span></li>
+<li><input type="checkbox" name="typ" value="B" /><span>B</span></li>
+
+<li><label for="desc">About:</label></li>
+
+<li><textarea name="desc" id="desc"></textarea></li>
+
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>
